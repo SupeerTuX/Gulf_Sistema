@@ -37,6 +37,7 @@ class _CardWalletState extends State<CardWallet> {
               padding: const EdgeInsets.all(18.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -78,6 +79,14 @@ class _CardWalletState extends State<CardWallet> {
                   ),
                   Container(
                     height: 50,
+                    child: Align(
+                      alignment: Alignment.center,
+                      child: Text(
+                        'Nombre de Usuario',
+                        style: TextStyle(fontSize: 18, color: Colors.grey[600]),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
                     color: Colors.grey[300],
                   )
                 ],
