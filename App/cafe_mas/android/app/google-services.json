@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "341260964302",
+    "firebase_url": "https://cafemas-a5fd7.firebaseio.com",
+    "project_id": "cafemas-a5fd7",
+    "storage_bucket": "cafemas-a5fd7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341260964302:android:cae46874fd85c6cdb99b9f",
+        "android_client_info": {
+          "package_name": "com.cafemas.cafe_mas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "341260964302-30kjukjj7pi88k6egr0s64nvdb684ujv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cafemas.cafe_mas",
+            "certificate_hash": "46e15b6de478ccbaaac5c7c3d1245ee4a06e74d0"
+          }
+        },
+        {
+          "client_id": "341260964302-4evprjl18lnm2tf7i5ol6cf8d926clph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvwhGINlZtSAJRfVi_Ato9r3ztMVdIbtI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "341260964302-4evprjl18lnm2tf7i5ol6cf8d926clph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
