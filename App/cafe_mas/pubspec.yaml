@@ -31,6 +31,10 @@ dependencies:
   firebase_auth: ^0.18.0+1
   fluttertoast: ^7.1.1
   firebase_core: ^0.5.0
+  qr_flutter: ^3.2.0
+  image_picker: ^0.6.7+4
+  shared_preferences: ^0.5.12
+  
 
 dev_dependencies:
   flutter_test:
@@ -46,9 +50,20 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/logo_gulf.png
+    - assets/logo_gulf2.png
+    - assets/logo_gulf3.png
+    - assets/codigo-qr.png
+    - assets/cafemas_logo.jpg
+    - assets/cafemas.png
+    - assets/logocircular.png
+    - assets/menu/torta-carnepolaca.jpg
+    - assets/menu/capuchino.jpg
+    - assets/menu/bagel-salado.jpg
+    - assets/menu/express.jpg
+    - assets/menu/header-tienda.png
+    
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see

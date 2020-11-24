@@ -1,3 +1,5 @@
+import 'package:cafe_mas/Data/SharedKeys.dart';
+import 'package:cafe_mas/Services/FirebaseServices.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -147,14 +149,25 @@ class _OTPScreenState extends State<OTPScreen> {
         if (value.user != null) {
           // Handle loogged in state
           print(value.user.phoneNumber);
-          Navigator.pushAndRemoveUntil(
-              context,
-              MaterialPageRoute(
-                builder: (context) => HomeScreen(
-                    //user: value.user,
+          loginUser(value.user.phoneNumber).then((value) {
+            print('Usuario registrado');
+            print('Comprobando si el doc id existe');
+            checkIfDocExist().then((doc) {
+              if (!doc) {
+                Navigator.of(context).pushNamedAndRemoveUntil(
+                    '/config', (Route<dynamic> route) => false);
+              } else {
+                Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => HomeScreen(
+                          //user: value.user,
+                          ),
                     ),
-              ),
-              (Route<dynamic> route) => false);
+                    (Route<dynamic> route) => false);
+              }
+            });
+          });
         } else {
           showToast("Error validating OTP, try again", Colors.red);
         }

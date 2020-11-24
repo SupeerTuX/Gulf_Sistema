@@ -1,5 +1,7 @@
 import 'package:cafe_mas/screens/App.dart';
-
+import 'package:cafe_mas/screens/ConfGulfScreen.dart';
+import 'package:cafe_mas/screens/HomeScreen.dart';
+import 'package:cafe_mas/screens/ProductoScreen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -21,6 +23,9 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         '/': (context) => App(),
+        '/producto': (context) => ProductoScreen(),
+        '/config': (context) => FacturacionSettingsScreen(),
+        '/home': (context) => HomeScreen(),
       },
     );
   }
